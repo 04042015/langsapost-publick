@@ -4,6 +4,7 @@ import Image from 'next/image';
 import { Clock, User, Eye } from 'lucide-react';
 import { formatDistanceToNow } from 'date-fns';
 import { id } from 'date-fns/locale';
+import { cn } from "@/lib/utils";
 
 interface ArticleCardProps {
   slug: string;
