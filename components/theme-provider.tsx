@@ -5,11 +5,15 @@ import { ThemeProvider as NextThemesProvider } from "next-themes";
 
 type ThemeProviderProps = {
   children: React.ReactNode;
-  attribute: "class" | "id" | "data-theme";
+  attribute: "class";
   defaultTheme?: string;
   enableSystem?: boolean;
 };
 
-export function ThemeProvider({ children, ...props }: ThemeProviderProps) {
-  return <NextThemesProvider {...props}>{children}</NextThemesProvider>;
+export function 
+  ThemeProvider({ children, ...props }:
+                ThemeProviderProps) {
+  return <NextThemesProvider 
+           {...props}>{children}</
+             NextThemesProvider>;
 }
